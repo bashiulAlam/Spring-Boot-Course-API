@@ -31,4 +31,13 @@ public class TopicService {
     public void addTopic(Topic topic) {
         topicList.add(topic);
     }
+
+    public void updateTopic(String id, Topic topic) {
+        for (Topic topicItem : topicList) {
+            if (topicItem.getId().equals(id)) {
+                topicList.set(topicList.indexOf(topicItem), topic);
+                return;
+            }
+        }
+    }
 }
