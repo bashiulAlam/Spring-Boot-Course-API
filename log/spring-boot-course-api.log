@@ -1,37 +1,33 @@
-2019-11-15 22:10:37,333 INFO org.springframework.boot.StartupInfoLogger [main] Starting CourseApiApp on LAPTOP-HMFUJK93 with PID 1084 (started by SABAB in D:\IntelliJ Projects\Spring-Boot-Course-API)
-2019-11-15 22:10:37,335 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2019-11-15 22:10:37,336 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2019-11-15 22:10:37,372 INFO org.springframework.context.support.AbstractApplicationContext [main] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a079870: startup date [Fri Nov 15 22:10:37 BDT 2019]; root of context hierarchy
-2019-11-15 22:10:37,721 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 5.3.6.Final
-2019-11-15 22:10:38,918 INFO org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [main] Tomcat initialized with port(s): 10010 (http)
-2019-11-15 22:10:38,928 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2019-11-15 22:10:38,936 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet Engine: Apache Tomcat/8.5.23
-2019-11-15 22:10:39,061 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
-2019-11-15 22:10:39,061 INFO org.springframework.boot.context.embedded.EmbeddedWebApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 1689 ms
-2019-11-15 22:10:39,202 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Mapping servlet: 'dispatcherServlet' to [/]
-2019-11-15 22:10:39,207 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
-2019-11-15 22:10:39,208 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2019-11-15 22:10:39,209 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2019-11-15 22:10:39,209 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
-2019-11-15 22:10:39,559 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a079870: startup date [Fri Nov 15 22:10:37 BDT 2019]; root of context hierarchy
-2019-11-15 22:10:39,617 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/hello]}" onto public java.lang.String com.sample.controller.HelloController.sayHi()
-2019-11-15 22:10:39,619 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/topics]}" onto public java.util.List<com.sample.repository.Topic> com.sample.controller.TopicController.getTopics()
-2019-11-15 22:10:39,619 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/topics/{id}],methods=[PUT]}" onto public void com.sample.controller.TopicController.updateTopic(com.sample.repository.Topic,java.lang.String)
-2019-11-15 22:10:39,619 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/topics/{id}],methods=[DELETE]}" onto public void com.sample.controller.TopicController.deleteTopic(java.lang.String)
-2019-11-15 22:10:39,620 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/topics/{id}]}" onto public com.sample.repository.Topic com.sample.controller.TopicController.getTopicById(java.lang.String)
-2019-11-15 22:10:39,620 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/topics],methods=[POST]}" onto public void com.sample.controller.TopicController.addTopic(com.sample.repository.Topic)
-2019-11-15 22:10:39,622 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2019-11-15 22:10:39,623 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2019-11-15 22:10:39,648 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-11-15 22:10:39,648 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-11-15 22:10:39,676 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-11-15 22:10:39,803 INFO org.springframework.jmx.export.MBeanExporter [main] Registering beans for JMX exposure on startup
-2019-11-15 22:10:39,823 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-10010"]
-2019-11-15 22:10:39,836 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-10010"]
-2019-11-15 22:10:39,852 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
-2019-11-15 22:10:39,872 INFO org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [main] Tomcat started on port(s): 10010 (http)
-2019-11-15 22:10:39,880 INFO org.springframework.boot.StartupInfoLogger [main] Started CourseApiApp in 2.774 seconds (JVM running for 3.264)
-2019-11-15 22:10:48,368 INFO org.apache.juli.logging.DirectJDKLog [http-nio-10010-exec-1] Initializing Spring FrameworkServlet 'dispatcherServlet'
-2019-11-15 22:10:48,369 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-10010-exec-1] FrameworkServlet 'dispatcherServlet': initialization started
-2019-11-15 22:10:48,392 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-10010-exec-1] FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
-2019-11-15 22:10:48,420 INFO com.sample.controller.TopicController [http-nio-10010-exec-1] Getting all topics...
+2019-11-23 19:29:05,560 INFO org.springframework.boot.StartupInfoLogger [main] Starting CourseApiApp on LAPTOP-HMFUJK93 with PID 9064 (started by SABAB in D:\IntelliJ Projects\Spring-Boot-Course-API)
+2019-11-23 19:29:05,562 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2019-11-23 19:29:05,563 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-23 19:29:05,606 INFO org.springframework.context.support.AbstractApplicationContext [main] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6156496: startup date [Sat Nov 23 19:29:05 BDT 2019]; root of context hierarchy
+2019-11-23 19:29:05,950 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 5.3.6.Final
+2019-11-23 19:29:07,181 INFO org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [main] Tomcat initialized with port(s): 10010 (http)
+2019-11-23 19:29:07,194 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-11-23 19:29:07,195 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-11-23 19:29:07,330 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2019-11-23 19:29:07,330 INFO org.springframework.boot.context.embedded.EmbeddedWebApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 1724 ms
+2019-11-23 19:29:07,483 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-23 19:29:07,488 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-23 19:29:07,489 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-23 19:29:07,489 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-23 19:29:07,489 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-23 19:29:07,812 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6156496: startup date [Sat Nov 23 19:29:05 BDT 2019]; root of context hierarchy
+2019-11-23 19:29:07,877 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/hello]}" onto public java.lang.String com.sample.controller.HelloController.sayHi()
+2019-11-23 19:29:07,879 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/topics/{id}]}" onto public com.sample.repository.Topic com.sample.controller.TopicController.getTopicById(java.lang.String)
+2019-11-23 19:29:07,879 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/topics],methods=[POST]}" onto public void com.sample.controller.TopicController.addTopic(com.sample.repository.Topic)
+2019-11-23 19:29:07,880 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/topics/{id}],methods=[PUT]}" onto public void com.sample.controller.TopicController.updateTopic(com.sample.repository.Topic,java.lang.String)
+2019-11-23 19:29:07,880 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/topics/{id}],methods=[DELETE]}" onto public void com.sample.controller.TopicController.deleteTopic(java.lang.String)
+2019-11-23 19:29:07,880 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/topics]}" onto public java.util.List<com.sample.repository.Topic> com.sample.controller.TopicController.getTopics()
+2019-11-23 19:29:07,883 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-23 19:29:07,883 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-23 19:29:07,908 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 19:29:07,908 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 19:29:07,951 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 19:29:08,179 INFO org.springframework.jmx.export.MBeanExporter [main] Registering beans for JMX exposure on startup
+2019-11-23 19:29:08,194 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-10010"]
+2019-11-23 19:29:08,204 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-10010"]
+2019-11-23 19:29:08,213 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
+2019-11-23 19:29:08,230 INFO org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [main] Tomcat started on port(s): 10010 (http)
+2019-11-23 19:29:08,237 INFO org.springframework.boot.StartupInfoLogger [main] Started CourseApiApp in 2.968 seconds (JVM running for 3.463)
